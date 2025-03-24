@@ -1,0 +1,385 @@
+/* General styles */
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px; /* Increased font size */
+    display: flex;
+    justify-content: center; /* Center the header content */
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px; /* Increased font size */
+}
+
+header .home-link {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+header .home-link:hover {
+    text-decoration: underline;
+}
+
+header nav {
+    margin: 10px 0 0 0;
+    position: relative;
+}
+
+header .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+}
+
+header .nav-links li {
+    margin: 0 20px; /* Increase the horizontal distance between the links */
+}
+
+header .nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px; /* Increased font size */
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger menu styles */
+/* Hamburger menu styles */
+/* Add this section if it doesn't already exist */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative; /* Ensure the dropdown aligns with the icon */
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #000;
+    margin: 2px 0;
+    transition: 0.4s;
+}
+/* Contact Page Styles */
+.contact-intro {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile styles */
+/* Update or add this section inside your existing @media (max-width: 900px) block */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    header .nav-links {
+        flex-direction: column;
+        align-items: flex-start; /* Align links to the left */
+        display: none; /* Hide the navigation links by default */
+        position: absolute; /* Position relative to the hamburger menu */
+        top: 100%; /* Place the dropdown directly below the menu */
+        left: 0; /* Align the dropdown with the left edge of the menu */
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+
+    header .nav-links.active {
+        display: flex; /* Show the navigation links when active */
+    }
+
+    header .nav-links li {
+        margin: 5px 0;
+    }
+
+    .menu-toggle {
+        display: flex; /* Show the hamburger menu */
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-container {
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 100px; /* Adjust width for smaller screens */
+        height: 100px; /* Adjust height for smaller screens */
+        margin-bottom: 5px; /* Further reduce margin-bottom to shrink distance */
+    }
+
+    .about-me {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 20px; /* Add margin-top to separate sections */
+        min-width: 140px; /* Allow the about-me section to have a lower minimum width */
+    }
+
+    .about-site {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 10px; /* Add margin-top to separate sections */
+        min-width: 200px; /* Set a greater minimum width for the about-site section */
+    }
+    .about-site div {
+        max-width: 1600px;
+         /* Restrict the width of the inner content */
+        margin: 0 auto; /* Center the inner content */
+        padding-top: .1px;
+        width: 85%;
+    }
+
+    .recent-posts {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-top: 20px; /* Add margin-top to separate sections */
+        min-width: 200px; /* Set a greater minimum width for the recent-posts section */
+    }
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+    min-height: 100vh; /* Ensure main takes full height of the viewport */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover;
+    margin-bottom: 10px; /* Reduce margin-bottom to shrink distance */
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 20px; /* Increased font size */
+    text-align: center; /* Center the text */
+}
+
+.about-me {
+    text-align: center;
+    margin-top: 10px;
+    max-width: 400px; /* Restrict the horizontal allowed distance */
+}
+.about-me p {
+     width: 85%; /* Restrict the maximum width of the text */
+     text-align: center; /* Ensure the text is centered */
+ }   
+
+section {
+    background-color: #ffffff; /* White background for the section */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 2320px; /* Increase the max-width for the about-site section */
+    width: 90%;
+    text-align: center;
+}
+
+section div {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+section ul li a {
+    color: #35424a;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #35424a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+section ul li a:hover {
+    background-color: #35424a;
+    color: #ffffff;
+}
+
+/* Full Screen Adjustments */
+@media (min-width: 901px) {
+    main {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 20px;
+        align-items: start;
+    }
+
+    .profile-container {
+        grid-column: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-picture {
+        width: 150px; /* Fixed width */
+        height: 150px; /* Fixed height */
+        margin-bottom: 10px; /* Reduce margin-bottom to shrink distance */
+    }
+
+    .profile-name {
+        margin: 0;
+        font-size: 20px; /* Increased font size */
+        text-align: center; /* Center the text */
+    }
+
+    .about-me {
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        background-color: #ffffff;
+    }
+    .about-me p {
+       /* Prevent the text from affecting the box width */
+        width: 85%; /* Restrict the maximum width of the text */
+        text-align: center; /* Ensure the text is centered */
+    }   
+
+    .about-site {
+        max-width: 1600px; /* Restrict the maximum width */
+        width: 99% auto;
+        padding-top: 15px;/* Add padding for spacing */
+        margin: 10px auto;
+        margin-left: 2px auto;
+        margin-right: 17px; /* Center horizontally with auto margins */
+        text-align: center; /* Center the text inside the box */
+        background-color: #ffffff; /* Optional: Add a background color */
+        border-radius: 10px; /* Optional: Add rounded corners */
+        
+    }
+    .about-site div {
+        max-width: 1600px;
+         /* Restrict the width of the inner content */
+        margin: 0 auto; /* Center the inner content */
+        padding-top: .1px;
+        width: 90%;
+    }
+
+    .recent-posts {
+        grid-column: 2 / 3;
+        max-width: 1500px; /* Increase the max-width for the recent-posts section */
+        padding: 20px; /* More padding for full screen */
+        margin-top: 20px; /* Add margin-top to separate sections */
+        min-width: 200px; /* Set a greater minimum width for the recent-posts section */
+        justify-self: center; /* Center the recent-posts section */
+        margin-left: 0; /* Add margin to ensure distance between sections */
+    }
+
+    section div {
+        max-width: 2000px; /* Adjust as needed */
+    }
+}
+footer {
+    text-align: center; /* Center the text horizontally */
+}
+.about-me p {
+    display: inline-block;
+    max-width: 400px; /* Restrict the maximum width of the text */
+    text-align: center;
+    line-height: 1.8;
+    font-size: 24px;
+    margin: 10px; /* Ensure the text is centered */
+}
+
+.about-site p {
+    font-size: 24px; /* Adjust the font size */
+    line-height: 1.6; /* Adjust the line spacing */
+    margin: 10px 0; /* Add spacing between paragraphs */
+}

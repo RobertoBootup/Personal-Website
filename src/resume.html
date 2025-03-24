@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Roberto DeFazio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes up the full viewport height */
+        }
+        header {
+            width: 100%; 
+        }
+        main {
+        justify-content: center; /* Horizontally center the content */
+        padding-top: 30px; /* Add 50px of space below the header */
+        padding-right: 41px;
+    }
+        .resume-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Full width */
+            padding: 20px; /* Add some padding around the resume */
+            
+        }
+
+        .resume-container img {
+            max-width: 100%; /* Ensure the image fits within the viewport width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>
+                <a href="index.html" class="home-link">Roberto DeFazio</a>
+            </h1>
+            <nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="about.html">My Interests</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="resume-container">
+            <img src="documents/Resume_jpg.jpg" alt="Resume">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Roberto DeFazio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

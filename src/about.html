@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interests - Roberto DeFazio</title> <!-- Updated title -->
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensure the body and html take up the full height */
+        }
+    
+        header {
+            margin: 0;
+            padding: 10px 0; /* Reduce padding around the header */
+        }
+    
+        main {
+            display: flex;
+            margin-top: 10px; /* Add exactly 25px of space below the header */
+        }
+    
+        .about-interests {
+            max-width: 1200px; /* Restrict the maximum width */
+            width: 90%; /* Ensure it adjusts to smaller screens */
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1); /* Add a more prominent shadow */
+            text-align: center;
+            margin: 0 auto; /* Center the box horizontally */
+        }
+        .about-interests h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+    
+        .about-interests p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #000000;
+        }
+        footer {
+            text-align: center; /* Center the text horizontally */
+            padding: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>
+                <a href="index.html" class="home-link">Roberto DeFazio</a>
+            </h1>
+            <nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="about.html">My Interests</a></li> <!-- Updated label -->
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="about-interests">
+            <h2>My Interests</h2> <!-- Updated heading -->
+            <p>
+                This is a placeholder for my interests. Here, I could elaborate on my passion for mathematics, programming, and how I enjoy solving real-world problems using technology. 
+                I might also include hobbies like hiking, reading sci-fi novels, or experimenting with new recipes in the kitchen.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Roberto DeFazio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
