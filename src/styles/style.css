@@ -390,80 +390,78 @@ footer {
     line-height: 1.6; /* Adjust the line spacing */
     margin: 10px 0; /* Add spacing between paragraphs */
 }
-/* General styles for screens smaller than 768px (common breakpoint for mobile) */
-@media (max-width: 768px) {
-    /* Adjust the header */
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .nav-links {
-        display: none; /* Hide the navigation links by default */
-        flex-direction: column;
-        text-align: center;
-        background-color: #f4f4f4; /* Optional: Add a background for the dropdown */
-        width: 100%;
-        position: absolute;
-        top: 60px; /* Adjust based on your header height */
-        left: 0;
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        display: flex; /* Show the navigation links when the menu is toggled */
-    }
-
-    .menu-toggle {
-        display: block; /* Show the hamburger menu */
-        cursor: pointer;
-    }
-
-    .menu-toggle .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: #333;
-    }
-
-    /* Adjust the profile container */
-    .profile-container {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .profile-picture {
-        width: 150px; /* Resize the profile picture */
-        height: auto;
-        border-radius: 50%; /* Optional: Make it circular */
-    }
-
-    .profile-name {
-        font-size: 1.5rem; /* Adjust font size */
-    }
-
-    .about-me p {
-        font-size: 1rem; /* Adjust paragraph font size */
-    }
-}
-
-/* Specific styles for iPhone 12/13/14 (375px width) */
+/* Adjust font sizes for smaller screens (e.g., iPhones) */
+/* Adjust styles for smaller screens (e.g., iPhones) */
 @media (max-width: 375px) {
-    .profile-container {
-        padding: 10px;
+
+    header {
+        width: 555px; /* Make the header span the full width */
+        padding: 10px 0; /* Add some vertical padding */
+    }
+    .header-container {
+        display: flex;
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center-align the content */
+        width: 100%; /* Ensure the container spans the full width */
+    }
+    .nav-links li {
+        margin: 5px 10px; /* Add spacing between the links */
     }
 
-    .profile-picture {
-        width: 120px; /* Smaller profile picture */
+    .nav-links a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        text-decoration: none; /* Remove underline */
+        color: #000; /* Set link color */
+    }
+
+
+    body {
+        font-size: 14px; /* Reduce the base font size */
+        padding: 10px; /* Add some padding for better spacing */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust header font size */
+        text-align: center; /* Center-align the header */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Adjust subheader font size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+        line-height: 1.5; /* Improve readability */
     }
 
     .profile-name {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Adjust the profile name font size */
+        text-align: center; /* Center-align the profile name */
     }
 
-    .about-me p {
-        font-size: 0.9rem;
+    .profile-container {
+        padding: 10px; /* Add padding around the profile section */
+        text-align: center; /* Center-align the content */
+    }
+
+    .profile-picture {
+        width: 120px; /* Resize the profile picture */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Make it circular */
+    }
+
+    .about-me, .about-site {
+        /* Add padding for better spacing */
+    }
+
+    .about-me p, .about-site p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+        text-align: center;/* Justify text for better readability */
+        width: 95%; /* Added percentage unit and semicolon */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Reduce footer font size */
+        text-align: center; /* Center-align the footer */
     }
 }
