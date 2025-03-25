@@ -148,7 +148,8 @@ header .nav-links a:hover {
 @media (max-width: 900px) {
     header {
         flex-direction: column;
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px;
+        width: 100%; /* Adjust font size for smaller screens */
     }
 
     header .nav-links {
@@ -388,4 +389,81 @@ footer {
     font-size: 24px; /* Adjust the font size */
     line-height: 1.6; /* Adjust the line spacing */
     margin: 10px 0; /* Add spacing between paragraphs */
+}
+/* General styles for screens smaller than 768px (common breakpoint for mobile) */
+@media (max-width: 768px) {
+    /* Adjust the header */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column;
+        text-align: center;
+        background-color: #f4f4f4; /* Optional: Add a background for the dropdown */
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the navigation links when the menu is toggled */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the hamburger menu */
+        cursor: pointer;
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #333;
+    }
+
+    /* Adjust the profile container */
+    .profile-container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 150px; /* Resize the profile picture */
+        height: auto;
+        border-radius: 50%; /* Optional: Make it circular */
+    }
+
+    .profile-name {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+
+    .about-me p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+}
+
+/* Specific styles for iPhone 12/13/14 (375px width) */
+@media (max-width: 375px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 120px; /* Smaller profile picture */
+    }
+
+    .profile-name {
+        font-size: 1.2rem;
+    }
+
+    .about-me p {
+        font-size: 0.9rem;
+    }
 }
