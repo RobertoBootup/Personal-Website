@@ -121,20 +121,26 @@ header .nav-links a:hover {
     font-size: 16px;
 }
 
-.contact-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+#submit-button:disabled {
+    background-color: #ccc; /* Light grey */
+    color: #666; /* Darker grey text */
+    cursor: not-allowed; /* Show "not allowed" cursor */
 }
 
-.contact-form button:hover {
-    background-color: #0056b3;
+/* Enabled button (blue) */
+#submit-button {
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-button:hover:not(:disabled) {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Mobile styles */
