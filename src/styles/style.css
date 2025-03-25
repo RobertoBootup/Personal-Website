@@ -392,7 +392,7 @@ footer {
 }
 /* Adjust font sizes for smaller screens (e.g., iPhones) */
 /* Adjust styles for smaller screens (e.g., iPhones) */
-@media (max-width: 375px) {
+@media (max-width: 499px) {
 
     header {
         width: 555px; /* Make the header span the full width */
