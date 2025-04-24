@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             name: 'GitHub Projects',
-            url: 'https://github.com/your-github-username',
+            url: 'https://github.com/RobertoBootup',
         },
         {
-            name: 'Kaggle Projects',
-            url: 'https://www.kaggle.com/your-kaggle-username',
+            name: 'HackerRank Progress',
+            url: 'https://www.hackerrank.com/profile/rfd12',
         },
     ];
 

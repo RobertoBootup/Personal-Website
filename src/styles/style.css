@@ -456,7 +456,8 @@ footer {
 
     .about-me p, .about-site p {
         font-size: 0.9rem; /* Adjust paragraph font size */
-        text-align: center;/* Justify text for better readability */
+        text-align: justify;/* Justify text for better readability */
+        line-height: 1.5;
         width: 95%; /* Added percentage unit and semicolon */
     }
 
