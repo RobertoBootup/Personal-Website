@@ -1,6 +1,6 @@
 # Personal Website
 
-This is a personal website project that showcases information about me, including links to my GitHub and Kaggle projects, along with a profile picture.
+This is a personal website project that showcases information about me, including links to my GitHub and HackerRank, along with a profile picture.
 
 ## Project Structure
 
